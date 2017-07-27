@@ -1,0 +1,16 @@
+<div class="dashboard">
+ <div class="widgetsRow">
+   <div class="widget">
+     imppressions: {{data.imppressions}}
+   </div>
+   <div class="widget">
+     clicks: {{data.clicks}}
+   </div>
+   <div class="widget">
+     ctr: {{(data.clicks/data.imppressions )*100| number}}%
+   </div>
+   <div class="widget">
+     eCPM: {{data.eCPM}}
+   </div>
+ </div>
+</div>

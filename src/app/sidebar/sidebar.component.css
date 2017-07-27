@@ -1,0 +1,31 @@
+.flex-container{
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+nav .flex-container li{
+  border-bottom: 1px black solid;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+
+}
+.flex-container li:first-child{
+  padding-top: 0;
+}
+
+.sidenav{
+    position: fixed;
+    top: 65px;
+    bottom: 0;
+    left: 0;
+    padding: 0;
+    min-width: 260px;
+    background-color: #fafafa;
+    border: 1px solid black;
+    height: calc(100vh - 64px);
+}
+ul{
+  list-style-type: none;
+  padding: 0;
+}

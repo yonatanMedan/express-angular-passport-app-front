@@ -1,0 +1,6 @@
+.content{
+  margin-left: 260px;
+  margin-top: 65px;
+  padding-top: 10px;
+  min-height: calc(100vh - 66px);
+}

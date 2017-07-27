@@ -1,0 +1,18 @@
+.dashboard{
+  display: flex;
+  flex-direction: column;
+}
+.widgetsRow{
+  display: flex;
+  justify-content: space-around;
+
+}
+.widget{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(218, 209, 191);
+  border-radius: 5%;
+  width: 200px;
+  height: 200px;
+}

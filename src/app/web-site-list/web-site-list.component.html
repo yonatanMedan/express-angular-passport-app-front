@@ -1,0 +1,28 @@
+<div>
+  <table>
+    <tr>
+      <th>
+        website
+      </th>
+      <th>
+        clicks
+      </th>
+      <th>
+        imppressions
+      </th>
+    </tr>
+    <tr *ngFor="let website of data" [routerLink]="['/websites',website.id]" >
+      <th>
+        {{website.name}}
+      </th>
+      <th>
+        {{website.imppressions}}
+      </th>
+      <th>
+        {{website.clicks}}
+      </th>
+    </tr>
+
+
+  </table>
+</div>

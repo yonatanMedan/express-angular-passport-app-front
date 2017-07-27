@@ -1,0 +1,34 @@
+
+export const WebSites = [{
+  id:1,
+  name:"Cnn.com",
+  imppressions:2566,
+  clicks:189,
+  eCPM:4.5,
+  revPerMonth:[[1,14],[2,20],[3,12],[5,234],[6,1234],[7,1220]]
+},
+{
+  id:2,
+  name:"Ynet.co.il",
+  imppressions:3459,
+  clicks:124,
+  eCPM:4.2,
+  revPerMonth:[[1,14],[2,20],[3,50],[5,30],[6,1234],[7,1220]]
+},
+{
+  id:3,
+  name:"tmz.com",
+  imppressions:1342,
+  clicks:212,
+  eCPM:4.9,
+  revPerMonth:[[1,14],[2,20],[3,50],[5,203],[6,3],[7,1234]]
+},
+{
+  id:4,
+  name:"Forbs.com",
+  imppressions:1334,
+  clicks:123,
+  eCPM:5,
+  revPerMonth:[[1,49],[2,20],[3,12],[5,234],[6,1234],[7,13124]]
+}
+];
