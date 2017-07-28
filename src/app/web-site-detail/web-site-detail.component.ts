@@ -8,6 +8,7 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./web-site-detail.component.css']
 })
 export class WebSiteDetailComponent implements OnInit {
+
   websiteId;
   website;
   sub;

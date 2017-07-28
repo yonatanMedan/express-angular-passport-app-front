@@ -8,6 +8,7 @@ import { WebSiteDetailComponent } from './web-site-detail/web-site-detail.compon
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { TopbarComponent } from './topbar/topbar.component';
 import { WebSitesService } from './website.service/web-sites.service';
+import { MyLineChartComponent } from './my-line-chart/my-line-chart.component';
 
 const appRoutes: Routes = [
   { path: 'dashboard', component: DashboardComponent },
@@ -22,6 +23,7 @@ const appRoutes: Routes = [
     WebSiteDetailComponent,
     SidebarComponent,
     TopbarComponent,
+    MyLineChartComponent,
   ],
   imports: [
     BrowserModule,

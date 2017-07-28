@@ -5,7 +5,7 @@ export const WebSites = [{
   imppressions:2566,
   clicks:189,
   eCPM:4.5,
-  revPerMonth:[[1,14],[2,20],[3,12],[5,234],[6,1234],[7,1220]]
+  revPerMonth:[14,24,25,10,23,12,45]
 },
 {
   id:2,
@@ -13,7 +13,7 @@ export const WebSites = [{
   imppressions:3459,
   clicks:124,
   eCPM:4.2,
-  revPerMonth:[[1,14],[2,20],[3,50],[5,30],[6,1234],[7,1220]]
+  revPerMonth:[14,24,43,55,23,23]
 },
 {
   id:3,
@@ -21,7 +21,7 @@ export const WebSites = [{
   imppressions:1342,
   clicks:212,
   eCPM:4.9,
-  revPerMonth:[[1,14],[2,20],[3,50],[5,203],[6,3],[7,1234]]
+  revPerMonth:[200,24,25,50,23,23]
 },
 {
   id:4,
@@ -29,6 +29,6 @@ export const WebSites = [{
   imppressions:1334,
   clicks:123,
   eCPM:5,
-  revPerMonth:[[1,49],[2,20],[3,12],[5,234],[6,1234],[7,13124]]
+  revPerMonth:[14,24,25,34,23,55]
 }
 ];

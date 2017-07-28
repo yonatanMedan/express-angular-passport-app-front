@@ -1,4 +1,4 @@
-<div> 
+<div>
   <table *ngIf="website">
     <tr>
       <th>
@@ -27,4 +27,6 @@
     </tr>
 
   </table>
+
+  <app-my-line-chart *ngIf="website" [website] = "website"></app-my-line-chart>
 </div>
