@@ -1,16 +1,17 @@
 <div class="dashboard">
- <div class="widgetsRow">
+ <div *ngIf="websites" class="widgetsRow">
    <div class="widget">
-     imppressions: {{data.imppressions}}
+     imppressions: {{websites.imppressions}}
    </div>
    <div class="widget">
-     clicks: {{data.clicks}}
+     clicks: {{websites.clicks}}
    </div>
    <div class="widget">
-     ctr: {{(data.clicks/data.imppressions )*100| number}}%
+     ctr: {{(websites.clicks/websites.imppressions )*100| number}}%
    </div>
    <div class="widget">
-     eCPM: {{data.eCPM}}
+     eCPM: {{websites.eCPM}}
    </div>
  </div>
+   <app-my-line-chart *ngIf="websites" [data] = "websites.revPerMonth"></app-my-line-chart>
 </div>

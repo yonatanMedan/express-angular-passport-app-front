@@ -8,17 +8,14 @@ import { WebSitesService } from '../website.service/web-sites.service';
 })
 export class DashboardComponent implements OnInit {
   constructor(private webSitesService:WebSitesService) { }
-  data = {
-    imppressions:10000,
-    clicks:1236,
-    eCPM:4.5
-  };
+  websites;
 
 
 
   ngOnInit() {
     this.webSitesService.getWebSitesMaster().then(data=>{
-      this.data = data
+      console.log(data);
+      this.websites = data
     });
   }
 

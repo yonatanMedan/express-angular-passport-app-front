@@ -1,14 +1,7 @@
 import { Component, OnInit, Input, ElementRef ,ViewChild ,AfterViewInit} from '@angular/core';
 import * as d3 from 'd3'
 import * as Chart from "chart.js/dist/Chart.min.js";
-class Website{
-  id:number;
-  name:string;
-  imppressions:number;
-  clicks:number;
-  eCPM:number;
-  revPerMonth:Array<number>;
-}
+
 
 @Component({
   selector: 'app-my-line-chart',
@@ -16,13 +9,14 @@ class Website{
   styleUrls: ['./my-line-chart.component.css']
 })
 export class MyLineChartComponent implements OnInit, AfterViewInit {
-  @Input() website:Website;
+  @Input() data:Array<number>;
   @ViewChild("canvas") canvas: ElementRef;
   constructor() {
  }
 
   ngAfterViewInit(){
-      console.log(this.website.revPerMonth);
+      console.log("line chart data:");
+      console.log(this.data);
     let canvas = this.canvas.nativeElement;
 
     var ctx = canvas.getContext('2d')
@@ -37,7 +31,7 @@ export class MyLineChartComponent implements OnInit, AfterViewInit {
                     label: "revenue",
                     backgroundColor: "yellow",
                     borderColor:"red",
-                    data: this.website.revPerMonth
+                    data: this.data
                     ,
                     fill: false,
                 }]

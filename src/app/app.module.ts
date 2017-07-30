@@ -9,8 +9,11 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import { TopbarComponent } from './topbar/topbar.component';
 import { WebSitesService } from './website.service/web-sites.service';
 import { MyLineChartComponent } from './my-line-chart/my-line-chart.component';
+import { HttpModule }    from '@angular/http';
+import { UserService } from './user.service/user.service'
 
 const appRoutes: Routes = [
+  { path:'',redirectTo:"dashboard",pathMatch: 'full'},
   { path: 'dashboard', component: DashboardComponent },
   { path: 'websites',component:WebSiteListComponent },
   { path: 'websites/:id',      component: WebSiteDetailComponent }
@@ -30,9 +33,10 @@ const appRoutes: Routes = [
     RouterModule.forRoot(
       appRoutes,
       { enableTracing: true } // <-- debugging purposes only
-    )
+    ),
+    HttpModule
   ],
-  providers: [WebSitesService],
+  providers: [WebSitesService,UserService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

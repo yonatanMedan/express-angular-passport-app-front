@@ -16,8 +16,7 @@ export class WebSiteDetailComponent implements OnInit {
 
   ngOnInit() {
     this.sub = this.route.params.subscribe(params => {
-       this.websiteId = +params['id']; // (+) converts string 'id' to a number
-       // In a real app: dispatch action to load the details here.
+       this.websiteId = +params['id']; 
        this.webSitesService.getWebSite(params['id']).then(a=>{this.website = a})
     });
 
